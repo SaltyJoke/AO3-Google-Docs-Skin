@@ -3,9 +3,9 @@ https://otwcode.github.io/docs/patterns/regions.html#dashboard-region
 */
 
 #dashboard {
-  width: 11.25em;
+  width: 15.5em;
   float: left;
-  padding: 0.5em;
+  padding: 0 1em;
 }
 
 #dashboard li {
@@ -13,36 +13,44 @@ https://otwcode.github.io/docs/patterns/regions.html#dashboard-region
 }
 
 #dashboard a, #dashboard span {
-  color: #111;
+  color: #444;
   display: block;
   white-space: normal;
   height: auto;
   line-height: 2;
-  padding: 0 0.5625em;
+  padding: 0.3em 1.3em;
   margin: 0;
+  border-radius: 1.3em;
   border: none;
   background: transparent;
-  vertical-align: middle;
     word-wrap: break-word;
     box-shadow: none;
 }
 
 #dashboard a:hover {
-  background: #ddd;
-  color: #900;
+  background: #f0f0f0;
+  color: #041e49;
+}
+
+#dashboard a:active {
+  background: #e9e9e9;
 }
 
 #dashboard ul {
   float: none;
   display: block;
   padding: 1.286em 0;
-  text-align: right;
+  text-align: left;
   border-top: 2px solid #ddd;
   position: relative;
 }
 
 #dashboard .current {
-  background: #ccc;
+  background: #d3e3fd;
+}
+
+#dashboard .current:hover {
+  background: #c2d3ef; /* unnecessary flavor */
 }
 
 #dashboard .secondary {
@@ -51,8 +59,6 @@ https://otwcode.github.io/docs/patterns/regions.html#dashboard-region
 
 #dashboard.own {
   background: transparent;
-  border-top: 15px solid #900;
-  border-bottom: 15px solid #900;
     opacity: 1.0;
     border-radius: 0.25em;
 }

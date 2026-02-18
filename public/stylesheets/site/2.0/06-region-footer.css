@@ -3,24 +3,31 @@ https://otwcode.github.io/docs/patterns/regions.html#footer-region
 */
 
 #footer {
-  background: #900 url("/images/skins/textures/tiles/red-ao3.png");
-  border-top: 2px solid;
-  color: #fff;
+  background: #f9fbfd;
+  color: #000;
   float: left;
-  font-size: 0.75em;
   position: relative;
   padding: 0;
   width: 100%;
+  display: flex;
 }
 
 #footer ul {
-  border: 0;
+  background-color: #fff;
+  border: solid 1px #c7c7c7;
+  border-top: none;
   clear: both;
-  margin: 1.5em 0;
-  padding: 1em 5%;
+  margin: 0 10% 2em 10%;
+  padding: clamp(6vw, 1in, 10vw);
+  padding-top: 0;
   float: left;
   text-align: left;
-  width: 90%;
+  width: 100%;
+  display: flex;
+}
+
+#outer.wrapper:has(#main.dashboard) #footer ul {
+  margin-left: 20em;
 }
 
 #footer li {
@@ -38,15 +45,13 @@ https://otwcode.github.io/docs/patterns/regions.html#footer-region
   vertical-align: baseline;
     box-shadow: none;
     border-radius: 0;
-}
-
-#footer a, #footer button {
-  color: #fff;
+  color: #000;
   display: inline;
-  text-decoration: underline;
+  text-decoration: none;
   line-height: 1.5;
   white-space: normal;
     text-underline-position: under;
+  word-wrap: break-word;
 }
 
 #footer button {
@@ -55,23 +60,31 @@ https://otwcode.github.io/docs/patterns/regions.html#footer-region
   height: unset;
 }
 
+#footer a:hover, #footer button:hover,
 #footer a:focus, #footer button:focus {
-  outline: 1px dotted;
+  text-decoration: underline;
 }
 
 #footer .module {
-  max-width: 20%;
-  padding: 0 2%;
+  border: 1px solid #000;
+  margin-left: -1px;
+  padding: 0.75em;
 }
 
 #footer .menu {
+  border: none;
+  display: inline;
   margin: 0;
   padding: 0;
 }
 
-#footer .heading {
+#footer h4 {
   display: block;
-  color: #fff;
+  color: #000;
+  font-family: Roboto, 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
 }
 
 /* END == */

@@ -3,19 +3,19 @@ https://otwcode.github.io/docs/stylesheets-views.html#core
 */
 
 body, .toggled form, .dynamic form, .secondary, .dropdown {
-  background: #fff;
+  background: #f9fbfd;
   color: #2a2a2a;
-  font: 100%/1.125 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+  font: 100%/1.125 Roboto, 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
   margin: 0;
   padding: 0;
 }
 
 .heading {
-  font-family: Georgia, serif;
+  font-family: 'Trebuchet MS', 'Book Antiqua', Palatino, Georgia, Verdana, Roboto, serif, 'GNU Unifont';
 }
 
 a, a:link {
-  color: #900;
+  color: #111;
   text-decoration: none;
 }
 

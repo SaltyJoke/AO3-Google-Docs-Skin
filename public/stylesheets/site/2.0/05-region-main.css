@@ -5,8 +5,13 @@ https://otwcode.github.io/docs/patterns/regions.html#main-region
 #main {
   font-size: 0.875em;
   line-height: 1.286;
-  margin: auto;
-  padding: 0.5em 2.5em 3.5em;
+  background-color: white;
+  margin: auto 10%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c7c7c7;
+  border-bottom: none;
+  padding: clamp(6vw, 1in, 10vw);
   position: relative;
   min-height: 450px;
 }
@@ -21,8 +26,8 @@ https://otwcode.github.io/docs/patterns/regions.html#main-region
 }
 
 #main.dashboard {
-  padding-left: 2em;
-  margin: 0.5em auto 1em 14em;
+  padding: clamp(6vw, 1in, 10vw);
+  margin: auto clamp(6vw, 1in, 10vw) auto 20em;
 }
 
 #main.home {
