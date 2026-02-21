@@ -26,8 +26,7 @@ https://otwcode.github.io/docs/patterns/regions.html#main-region
 }
 
 #main.dashboard {
-  padding: clamp(6vw, 1in, 10vw);
-  margin: auto clamp(6vw, 1in, 10vw) auto 20em;
+  margin: auto clamp(6vw, 1in, 10vw) auto 17.5rem;
 }
 
 #main.home {
@@ -35,19 +34,19 @@ https://otwcode.github.io/docs/patterns/regions.html#main-region
 }
 
 #main.errors {
-  background: url("/images/ao3_logos/sadface.png") top right no-repeat;
+  background: #fff url("/images/ao3_logos/sadface.png") top right no-repeat;
 }
 
 #main.error-502 {
-  background: url("/images/ao3_logos/ao3-502.png") top right no-repeat;
+  background: #fff url("/images/ao3_logos/ao3-502.png") top right no-repeat;
 }
 
 #main.error-503-maintenance {
-  background: url("/images/ao3_logos/logo-ruby.png") top right no-repeat;
+  background: #fff url("/images/ao3_logos/logo-ruby.png") top right no-repeat;
 }
 
 #main.session {
-  background: url("/images/logo.png") 0.5em 3em no-repeat;
+  background: #fff url("/images/logo.png") 0.5em 3em no-repeat;
 }
 
 #main.authentication {

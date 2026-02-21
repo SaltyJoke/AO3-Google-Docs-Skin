@@ -27,7 +27,12 @@ https://otwcode.github.io/docs/patterns/regions.html#footer-region
 }
 
 #outer.wrapper:has(#main.dashboard) #footer ul {
-  margin-left: 20em;
+  margin-left: 17.5rem;
+  margin-right: clamp(6vw, 1in, 10vw);
+}
+
+#outer.wrapper:has(#main.dashboard) #footer .menu {
+  margin: 0;
 }
 
 #footer li {

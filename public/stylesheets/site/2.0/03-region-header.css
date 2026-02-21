@@ -42,7 +42,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 }
 
 #header .actions a:hover, #header .actions a:focus, #header .dropdown:hover a, #header .open a {
-  background: #e8ebee;
+  background-color: #e8ebee;
 }
 
 #header .actions a:active, #header .dropdown:active a {
@@ -260,6 +260,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   height: 2.25rem;
   width: 2.25rem;
     background-size: 100%;
+  border-radius: 50%;
 }
 
 /* FORM: login */
