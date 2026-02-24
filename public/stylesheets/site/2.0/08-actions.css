@@ -21,7 +21,6 @@ ul.actions {
 }
 
 .actions a, .actions a:link, .action, .action:link, .actions button, .actions input, input[type="submit"], button, .current, .actions label {
-  background: #eee;
   color: #444;
   width: auto;
   font-weight: 400;
@@ -35,19 +34,13 @@ ul.actions {
   overflow: visible;
   position: relative;
   text-decoration: none;
-  border: 1px solid #bbb;
-  border-bottom: 1px solid #aaa;
-    background-image: -moz-linear-gradient(#fff 2%,#ddd 95%, #bbb 100%);
-    background-image: -webkit-linear-gradient(#fff 2%,#ddd 95%, #bbb 100%);
-    background-image: -o-linear-gradient(#fff 2%,#ddd 95%, #bbb 100%);
-    background-image: -ms-linear-gradient(#fff 2%,#ddd 95%, #bbb 100%);
-    background-image: linear-gradient(#fff 2%,#ddd 95%, #bbb 100%);
+  background-image: none;
     border-radius: 0.25em;
     box-shadow: none;
 }
 
 button {
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+  font-family: Roboto, 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
   box-sizing: content-box;
 }
 
