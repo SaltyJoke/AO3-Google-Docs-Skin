@@ -10,12 +10,11 @@ a.tag {
   line-height: 1.5;
   text-decoration: none;
   padding: 0;
-  border-bottom: 1px dotted;
 }
 
 a.tag:hover, .listbox .heading a.tag:visited:hover {
-  background: #900;
-  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
 }
 
 .tags li {
@@ -96,10 +95,6 @@ a.cloud8 {
 https://otwcode.github.io/docs/classes-taxonomy.html#grouping-and-spacing
 */
 
-.wrapper {
-    box-shadow: 1px 1px 5px #aaa;
-}
-
 #outer.wrapper {
   float: left;
   width: 100%;
@@ -142,7 +137,7 @@ dl.index dd {
   margin: 0 0.25em 0.643em 2.5em;
   padding: 0.375em 0.15em 0.15em;
   overflow: visible;
-  background: #ededed;
+  background: #e9eef6;
 }
 
 dl.index > dd:after {
@@ -166,7 +161,7 @@ a.rss span {
 }
 
 a.work {
-  font: 100 1.143em/1.125 Georgia, serif;
+  font: 100 1.143em/1.125 'Trebuchet MS', 'Book Antiqua', Palatino, Georgia, Verdana, Roboto, serif, 'GNU Unifont';
   margin: 0.5em 0;
   color: #900;
 }
@@ -177,6 +172,10 @@ a.work {
 
 li.relationships a {
   background: #eee;
+}
+
+li.relationships a:hover {
+  color: #666;
 }
 
 .actions .reindex a {
@@ -224,6 +223,7 @@ p.qr svg {
 .icon {
   height: 100px;
   width: 100px;
+  border-radius: 1em;
 }
 
 .icon a {
@@ -247,7 +247,7 @@ dl.language {
 dl.stats {
   text-align: right;
   background: none;
-  margin-top: 0.643em;
+  margin-top: 0.5em;
     box-shadow: none;
 }
 
@@ -261,7 +261,7 @@ dl.stats dd {
 }
 
 .statistics .index li:nth-of-type(even) {
-  background: #eee;
+  background: #e9eef6;
 }
 
 .concise li { 

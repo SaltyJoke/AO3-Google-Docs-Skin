@@ -3,7 +3,7 @@ https://otwcode.github.io/docs/classes-taxonomy.html#modifiers
 */
 
 .own, .draft, .draft .wrapper, .unread, .child, .unwrangled, .unreviewed {
-  background: #ededed;
+  background: #e9eef6;
     opacity: 0.95;
 }
 
@@ -16,10 +16,10 @@ https://otwcode.github.io/docs/classes-taxonomy.html#modifiers
 /* (these states spoof the ".navigation .current" style) */
 
 span.unread, .replied, span.claimed, .actions span.defaulted {
-  background: #ccc;
+  background: #cfd3d9;
   color: #900;
   width: auto;
-  font: 100 100%/1.286 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+  font: 100 100%/1.286 Roboto, 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
   height: 1.286em;
   vertical-align: middle;
   display: inline-block;
@@ -28,8 +28,6 @@ span.unread, .replied, span.claimed, .actions span.defaulted {
   overflow: visible;
   position: relative;
   text-decoration: none;
-  border: 1px solid #bbb;
-  border-bottom: 1px solid #aaa;
     border-radius: 0.25em;
 }
 
@@ -68,11 +66,11 @@ span.offered.requested {
 /* Arrows for the accordion widget */
 
 .collapsed:after {
-  content: " \2193";
+  content: " \23f7";
 }
 
 .expanded:after {
-  content: " \2191";
+  content: " \23f6";
 }
 
 /* This is a helper for Back End and can be overridden contextually anywhere */

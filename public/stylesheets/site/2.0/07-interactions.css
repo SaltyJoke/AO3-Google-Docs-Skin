@@ -44,7 +44,7 @@ fieldset dl, fieldset.actions, fieldset dl fieldset dl {
 fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
   background: #fff;
   clear: right;
-  border-radius: 0;
+  border-radius: 0.5em;
 }
 
 fieldset dd dl, form .meta dd, fieldset dl fieldset dl, dd fieldset {

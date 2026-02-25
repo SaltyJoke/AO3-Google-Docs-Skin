@@ -52,6 +52,10 @@ label.action {
 input[type="submit"] {
   height: auto;
   white-space: normal;
+  color: #fff;
+  padding: 0.3em 1.3em;
+  border-radius: 1.3em;
+  background: #0b57d0;
 }
 
 p.submit, input.submit, dd.submit {
@@ -81,13 +85,26 @@ ol.pagination, div.pagination, ol.year {
   color: #111;
 }
 
-.actions a:hover, .actions button:hover, .actions input:hover, input[type="submit"]:hover, .actions a:focus, .actions button:focus, .actions input:focus, input[type="submit"]:focus, label.action:hover, .action:hover, .action:focus {
+.actions a:hover, .actions button:hover, .actions input:hover, .actions a:focus, .actions button:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
   background-color: #e8ebee;
 }
 
-.actions a:active, input[type="submit"]:active, .current, a.current, a:link.current, .current a:visited {
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #1e64d4;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0 2px 5px #00000030;
+}
+
+.actions a:active, .current, a.current, a:link.current, .current a:visited {
   color: #111;
   background: #e3e3e3;
+}
+
+input[type="submit"]:active {
+  background-color: #3574d8;
+  box-shadow: none;
 }
 
 .actions label.disabled {
@@ -110,7 +127,6 @@ ol.pagination, div.pagination, ol.year {
   font-weight: 900;
   margin-right: 0.375em;
   padding: 0 0.1em 0.15em;
-    box-shadow: -1px -1px 2px rgba(0,0,0,0.75);
     border-radius: 0.875em;
 }
 
