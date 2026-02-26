@@ -3,29 +3,35 @@ https://otwcode.github.io/docs/patterns/meta.html
 */
 
 dl.meta {
-  border: 1px solid #ccc;
   clear: right;
-  padding: 1.286em 0.75em;
   position: relative;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .meta dt {
-  min-width: 10.5em;
-  width: 25%;
   float: left;
   clear: left;
+  margin: 0 -1px -1px 0;
+  padding: 0.5em;
+  border: 1px solid #000;
 }
 
 .meta dd {
-  width: 72.5%;
   float: left;
-  margin: 0 0 0.643em;
+  margin: 0 -1px -1px 0;
+  padding: 0.5em;
+  border: 1px solid #000;
 }
 
 .meta .stats dl {
   float: left;
   margin-top: 0;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 dl.meta dd ul li, .meta .stats dl, .meta .stats dl dt, .meta .stats dl dd {
@@ -33,10 +39,10 @@ dl.meta dd ul li, .meta .stats dl, .meta .stats dl dt, .meta .stats dl dd {
 }
 
 .meta .stats dl dt, .meta .stats dl dd {
-  margin-block: 0 auto;
-  margin-inline: 0 0.375em;
-  padding-inline-end: 0.25em;
-  width: auto;
+  border: none;
+  text-align: left;
+  padding: 0 0.75em 0 0.125em;
+  width: 100%;
   min-width: 0;
   clear: none;
   float: left;
@@ -112,6 +118,15 @@ dl.meta .wrapper dd, dl.meta .wrapper dd p:last-of-type {
 }
 
 /* TODO the post new work form needs its classes changed so these overrides are no longer needed */
+
+.post .meta dl {
+  padding: 0;
+}
+
+.post .meta dt, .post .meta dd {
+  border: none;
+}
+
 .post .meta dd ul li {
   display: block;
 }

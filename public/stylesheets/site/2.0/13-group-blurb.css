@@ -21,8 +21,11 @@ li.blurb, .blurb .blurb {
   display: block;
   position: relative;
   clear: left;
-  padding: 0.429em 0.75em;
+  padding: 0.5em;
   overflow: visible;
+  flex-grow: 1;
+  border: 1px solid #000;
+  margin: 0 -1px -1px 0;
 }
 
 li.blurb:after, .blurb .blurb:after {
@@ -36,6 +39,7 @@ li.blurb:after, .blurb .blurb:after {
 
 .blurb .module {
   float: none;
+  display: block;
 }
 
 .blurb .header {
@@ -55,7 +59,7 @@ li.blurb:after, .blurb .blurb:after {
 }
 
 .blurb h4 a:link, .blurb h4 img {
-  color: #900;
+  color: #0b57d0;
   vertical-align: bottom;
 }
 

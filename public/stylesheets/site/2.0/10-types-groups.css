@@ -6,7 +6,7 @@ https://otwcode.github.io/docs/classes-taxonomy.html#types
 /* TYPE: TAGS */
 
 a.tag {
-  color: #111;
+  color: #444;
   line-height: 1.5;
   text-decoration: none;
   padding: 0;
@@ -107,6 +107,8 @@ https://otwcode.github.io/docs/classes-taxonomy.html#grouping-and-spacing
 .module, .index, .index .index {
   position: relative;
   width: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .module, .dashboard .index {
@@ -170,11 +172,13 @@ a.work {
   font-weight: bold;
 }
 
-li.relationships a {
-  background: #eee;
+.warnings a, li.relationships a {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
 }
 
-li.relationships a:hover {
+.warnings a:hover, li.relationships a:hover {
   color: #666;
 }
 
