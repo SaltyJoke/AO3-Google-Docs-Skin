@@ -20,7 +20,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   border: none;
   padding: 0;
   margin: 0;
-    border-radius: 0;
+    border-radius: 0.25em;
     box-shadow: none;
 }
 

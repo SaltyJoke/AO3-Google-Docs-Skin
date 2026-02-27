@@ -123,9 +123,9 @@ SUBSECTIONS:
 }
 
 .splash .module div.account {
-  background: #eaeaea;
-  border: 1px solid #ccc;
-    border-radius: 0.5em;
+  background: #e9eef6;
+  padding-bottom: 1em;
+    border-radius: 1em;
     box-sizing: border-box;
 }
 
@@ -150,6 +150,21 @@ SUBSECTIONS:
 .splash .account .actions {
   float: none;
   font-size: 1.143em;
+}
+
+.splash .account .actions a {
+  color: #fff;
+  padding: 0.3em 1.3em;
+  border-radius: 1.3em;
+  background: #0b57d0;
+}
+
+.splash .account .actions a:hover, i.splash .account .actions a:focus {
+  background-color: #1e64d4;
+}
+
+.splash .account .actions a:hover {
+  box-shadow: 0 2px 5px #00000030;
 }
 
 /* module: news */
@@ -351,6 +366,12 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 .faq .categories h3 {
   border-bottom: 0.25em double #333;
   margin-top: 1.929em;
+  padding-block: 0.25em;
+}
+
+.faq .categories h3 li {
+  position: relative;
+  top: -0.75em;
 }
 
 .faq .categories li {
