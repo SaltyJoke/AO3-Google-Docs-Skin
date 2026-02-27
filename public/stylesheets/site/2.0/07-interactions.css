@@ -30,7 +30,7 @@ but it's probably not complete.
 fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
   display: block;
   background: #f0f4f9;
-  margin: 0.643em;
+  margin-block: 0.643em;
   padding: 0.643em;
 }
 
@@ -72,7 +72,7 @@ label {
 
 input, textarea {
   font: 100% Roboto, 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
-  width: 90%;
+  width: -webkit-fill-available;
   border: 1px solid #bbb;
   border-radius: 0.5em;
 }
@@ -93,12 +93,12 @@ input:active, select:active, textarea:active {
 }
 
 input[type="radio"] + label, input[type="checkbox"] + label {
-  padding-left: 1em;
+  padding-right: 1em;
 }
 
 select {
   vertical-align: text-top;
-  width: 100%;
+  width: 90%;
   min-width: 10.5em;
 }
 
@@ -581,6 +581,12 @@ form.verbose legend, .verbose form legend {
     opacity: 1;
 }
 
+/*
+form.verbose > fieldset, .verbose form > fieldset {
+  margin-block: 0.643em;
+}
+  */
+
 /* MODE: SIMPLE for forms with three or fewer fieldsets (default) */
 
 form.simple span.actions {
@@ -655,11 +661,14 @@ form.single .autocomplete + input + span.submit input[type="submit"] {
 }
 
 .toggled form, .dynamic form {
-  margin-block: 1em;
   padding: 1em;
-  border: 1px solid #ccc;
   border-radius: 1em;
   background: #fff;
+}
+
+.toggled form {
+  margin-block: 1em;
+  border: 1px solid #ccc;
 }
 
 .dynamic form fieldset, .toggled form fieldset, .toggled form dl, .secondary .toggled form, .secondary form {

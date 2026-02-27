@@ -107,8 +107,6 @@ https://otwcode.github.io/docs/classes-taxonomy.html#grouping-and-spacing
 .module, .index, .index .index {
   position: relative;
   width: auto;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .module, .dashboard .index {

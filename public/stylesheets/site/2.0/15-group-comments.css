@@ -14,9 +14,9 @@ test note: have put clearfixes on listbox, blurb and comments here, to allow for
 
 div.comment, li.comment {
   position: relative;
-  border: 1px solid #ddd;
   overflow: visible;
   text-align: start;
+  border-radius: 1em;
 }
 
 .comment:after,
@@ -31,8 +31,8 @@ div.comment, li.comment {
 
 .comment div.icon {
   float: left;
-  margin: -1.5625em 0.5625em 0.5625em 0;
-  border-bottom: 5px solid #ddd;
+  margin: -2.145em 0.5625em 0.5625em 0;
+  border-bottom: 5px solid #cfd3d9;
 }
 
 .comment .icon .anonymous {
@@ -46,9 +46,10 @@ div.comment, li.comment {
 }
 
 .comment h4.byline {
-  background: #ddd;
-  padding: 0.25em 0.25em 0.25em 108px;
+  background: #cfd3d9;
+  padding: 0.5em 1em 0.5em 108px;
   margin: 0 auto -0.25em;
+  border-radius: 0.75em 0.75em 0 0;
 }
 
 .comment .role {
@@ -60,7 +61,7 @@ div.comment, li.comment {
 }
 
 .thread .even {
-  background: #eee;
+  background: #e9eef6;
   margin: 0;
 }
 
@@ -71,8 +72,7 @@ fieldset.comments, .comment .userstuff {
 }
 
 .comment .userstuff {
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin: 1em;
   min-height: 3.3em;
 }
 
@@ -95,6 +95,14 @@ fieldset.comments, .comment .userstuff {
 .comment .actions {
   float: none;
   text-align: right;
+  padding: 0.125em 0.5em;
+}
+
+.comment.group .actions a:hover, .comment.group .actions a:focus, .comment.group .actions a:active,
+.comment.group .actions button:hover, .comment.group .actions button:focus, .comment.group .actions button:active {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  background: none;
 }
 
 /* mods */

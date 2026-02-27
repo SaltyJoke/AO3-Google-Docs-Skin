@@ -23,7 +23,7 @@ https://otwcode.github.io/docs/patterns/regions.html#footer-region
   float: left;
   text-align: left;
   width: 100%;
-  display: flex;
+  align-items: start;
 }
 
 #outer.wrapper:has(#main.dashboard) #footer ul {
@@ -38,6 +38,7 @@ https://otwcode.github.io/docs/patterns/regions.html#footer-region
 #footer li {
   position: relative;
   display: block;
+  margin: 0.5em 0 0;
 }
 
 #footer a, #footer button {
@@ -74,6 +75,7 @@ https://otwcode.github.io/docs/patterns/regions.html#footer-region
   border: 1px solid #000;
   margin-left: -1px;
   padding: 0.75em;
+  height: 100%;
 }
 
 #footer .menu {
@@ -83,13 +85,8 @@ https://otwcode.github.io/docs/patterns/regions.html#footer-region
   padding: 0;
 }
 
-#footer h4 {
+#footer .heading {
   display: block;
-  color: #000;
-  font-family: Roboto, 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
-  font-weight: bold;
-  font-size: 1em;
-  margin: 0;
 }
 
 /* END == */

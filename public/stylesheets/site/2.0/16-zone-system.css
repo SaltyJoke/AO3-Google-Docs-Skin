@@ -30,8 +30,9 @@ SUBSECTIONS:
 
 .splash .module h3 {
   border-bottom: 1px solid #c8c8c8;
-  color: #900;
+  color: #0b57d0;
   font-size: 1.714em;
+  padding-bottom: 0.1em;
 }
 
 .splash span.link {
@@ -71,7 +72,7 @@ SUBSECTIONS:
 }
 
 .splash .browse li a:before {
-  color: #900;
+  color: #0b57d0;
   content: "\00BB";
   padding: 0 0.25em 0 0;
 }
@@ -95,11 +96,11 @@ SUBSECTIONS:
 }
 
 .splash .favorite li:nth-of-type(odd) a {
-  background: #eee;
+  background: #e9eef6;
 }
 
 .splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:focus {
-  background: #900;
+  background: #cfd3d9;
 }
 
 /* module: intro */

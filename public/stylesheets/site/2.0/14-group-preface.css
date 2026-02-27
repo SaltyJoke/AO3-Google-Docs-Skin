@@ -15,6 +15,7 @@ div.preface .module {
   margin: 0;
   padding: 0 0 0.643em;
   width: auto;
+  display: block;
 }
 
 .chapter .preface {
@@ -24,6 +25,7 @@ div.preface .module {
 .preface h3 {
   background: transparent;
   border-bottom: 1px solid;
+  padding-bottom: 0.1em;
 }
 
 .preface h2.title {

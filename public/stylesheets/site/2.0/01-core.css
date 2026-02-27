@@ -41,6 +41,7 @@ li.blurb, fieldset, form dl {
   list-style: none;
   display: inline;
   padding-left: 0.25em;
+  margin-block: 0;
 }
 
 .actions form {
