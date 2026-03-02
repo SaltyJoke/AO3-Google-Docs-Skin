@@ -12,6 +12,7 @@ user home, collections and challenges home, tag home, admin comms home
   border-bottom: 2px solid;
   display: block;
   margin-left: 100px;
+  padding-bottom: 0.1em;
 }
 
 .home .header .userstuff, .home .header dl.stats, .home .header .type {
@@ -39,6 +40,7 @@ user home, collections and challenges home, tag home, admin comms home
 .primary .icon {
   position: absolute;
   top: 0;
+  border-radius: 0;
 }
 
 .skins .primary .icon {

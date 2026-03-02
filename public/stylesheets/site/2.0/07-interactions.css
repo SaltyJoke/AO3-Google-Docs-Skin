@@ -260,7 +260,7 @@ form li ul.autocomplete li.input {
 }
 
 .autocomplete .notice {
-  margin-top: 0 !important;
+  margin-block: 0 !important;
 }
 
 .autocomplete li.added, .post .meta dd ul li.added {
