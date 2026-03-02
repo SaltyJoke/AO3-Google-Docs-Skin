@@ -159,19 +159,14 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 #login, #greeting {
   float: right;
   margin-right: 0.375em;
-  margin-top: 0.25em;
+  margin-top: 0.65em;
   display: flex;
-  flex-direction: row;
 }
 
 #header .user {
-  padding: 0.429em 0 0;
   position: relative;
   z-index: 20;
   order: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 #header .user a, #small_login .action {
@@ -189,7 +184,16 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 /* DIFF: no login for site skin */
 
 #greeting .user > li {
-  margin: 0 0.125em;
+  margin: 0 0.5em;
+}
+
+#greeting .user > li > a {
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  font-size: 0;
+  background-size: 1.25rem;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #greeting .menu {
@@ -205,55 +209,42 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   order: 3;
 }
 
-#greeting .dropdown:first-child a.dropdown-toggle {
+#greeting .dropdown:first-child > a {
   background-color: #c3e7ff;
-  border-radius: 20px;
-  padding: 11px 15px 11px 15px;
-  color: #001d35;
+  padding-block: 0.7rem;
+  font-size: 0.875rem;
+  color: #004A77;
 }
 
-#greeting .dropdown:first-child a.dropdown-toggle:hover {
+#greeting .dropdown:first-child > a:hover {
   background-color: #b2d7ef;
   outline: none;
 }
 
 #greeting .dropdown-toggle[href="/works/new"] {
-  font-size: 0px;
-  padding: 20px;
-  margin-right: 10px;
-  border-radius: 50%;
   background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/image/edit/materialiconsoutlined/48dp/2x/outline_edit_black_48dp.png");
-  background-size: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #greeting a[href^="/users/logout"] {  /* url is a bit different for remember me */
-  font-size: 0px;
-  padding: 20px;
-  margin-right: 10px;
-  border-radius: 50%;
   background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/action/exit_to_app/materialiconsoutlined/48dp/2x/outline_exit_to_app_black_48dp.png");
-  background-size: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #greeting p.icon {
   order: 2;
   border-radius: 50%;
-  margin-inline: 0.625rem;
-  margin-block: 0;
+  margin: 0 0.625rem;
   float: right;
-  height: auto;
+  height: 2.25rem;
   padding: 0.25rem;
   line-height: 0;
-  width: auto;
+  width: 2.25rem;
 }
 
 #greeting p.icon a {
   display: block;
   padding: 0;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 #greeting p.icon:hover, #greeting p.icon:focus {
@@ -269,6 +260,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   width: 2.25rem;
     background-size: 100%;
   border-radius: 50%;
+  outline: 1px solid #dcdee1;
 }
 
 /* FORM: login */

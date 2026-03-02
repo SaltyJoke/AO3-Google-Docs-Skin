@@ -30,12 +30,10 @@ div.error {
 }
 
 .notice, .comment_notice, .kudos_notice, ul.notes, .caution, .error, .comment_error, .kudos_error, .alert.flash {
-  background: #d1e1ef;
-  border: 1px solid #c2d2df;
+  background: #d3e3fd;
   margin: 0.643em auto;
   padding: 0.25em 0.375em;
   clear: right;
-    box-shadow: inset 1px 1px 2px;
     border-radius: 0.25em;
     word-wrap: break-word;
 }
@@ -43,22 +41,15 @@ div.error {
 .caution {
   background: #ffe34e;
   color: #000;
-  border-color: #d89e36;
 }
 
 .error, .comment_error, .kudos_error, .alert.flash {
-  background: #efd1d1;
-  border-color: #900;
-    box-shadow: 1px 1px 2px;
+  background: #fdd3d3;
 }
 
 /* p.notes should be deprecated in favor of p.note and the .notes class reserved for containers that could hold multiple notes, e.g., div, ul, section */
 p.notes, p.note {
   clear: right;
-}
-
-form .notice, form ul.notes {
-    box-shadow: 0px 0 3px #fff;
 }
 
 .notice p {
@@ -142,7 +133,7 @@ Set by an admin, these banners appear on every page until the user dismisses the
 }
 
 .announcement .userstuff {
-  background: #d1e1ef;
+  background: #d3e3fd;
   border: 1px solid #c2d2df;
   color: #333;
   margin: 0 2em;

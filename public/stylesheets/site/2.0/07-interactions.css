@@ -17,7 +17,7 @@ form {
 }
 
 /* wrap long text in Opera, Safari, and Chrome */
-fieldset {
+fieldset, form > dl {
   min-width: 0;
   border-radius: 1em;
 }
@@ -192,6 +192,7 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 .LV_validation_message {
   font-weight: 900;
   position: absolute;
+  display: block;
   margin-top: 0.643em;
   margin-right: 15em;
   z-index: 1;
