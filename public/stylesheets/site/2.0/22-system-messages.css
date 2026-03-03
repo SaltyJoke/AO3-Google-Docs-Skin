@@ -246,7 +246,7 @@ IN REVIEW: this block is very old (2008), a bit wonky and has an unexpected effe
 */
 
 span.symbol {
-  color: #2a547c;
+  color: #004a77;
   font-family: Georgia, serif;
   border: 1px solid;
   vertical-align: super;
@@ -254,7 +254,7 @@ span.symbol {
 }
 
 span.symbol span {
-  padding: 0.425em;
+  padding: 0 0.325em;
 }
 
 .symbols a, .symbol a {
@@ -270,18 +270,14 @@ span.symbol span {
 }
 
 span.question {
-  background: #d1e1ef;
-  border-color: #2a547c;
-    box-shadow: -1px -1px 2px rgba(0,0,0,0.25);
+  background: #c2e7ff;
+  border-color: #004a77;
 }
 
 a.question {
   border: 0;
   font-weight: bold;
-}
-
-.heading a.question {
-  font-size: 0.75em;
+  font-size: 0.75rem;
 }
 
 /* SYMBOLS KEY (help content) */

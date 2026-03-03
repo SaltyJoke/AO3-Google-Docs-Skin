@@ -10,10 +10,6 @@ https://otwcode.github.io/docs/patterns/listbox.html
   overflow: hidden;
 }
 
-.listbox .heading {
-  display: inline-block;
-}
-
 .listbox li.blurb, .listbox .landmark.heading, .listbox .tags .listbox, .listbox .lots li, .listbox .all li {
   display: block;
 }

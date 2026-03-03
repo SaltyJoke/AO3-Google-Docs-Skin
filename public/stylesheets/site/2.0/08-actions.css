@@ -53,7 +53,7 @@ label.action {
   padding: 0.15em 0.375em;
 }
 
-input[type="submit"] {
+input[type="submit"], .modal-closer {
   height: auto;
   white-space: normal;
   color: #fff;
@@ -93,11 +93,11 @@ ol.pagination, div.pagination, ol.year {
   background-color: #e8ebee;
 }
 
-input[type="submit"]:hover, input[type="submit"]:focus {
+input[type="submit"]:hover, input[type="submit"]:focus, .modal-closer:hover, .modal-closer:focus {
   background-color: #1e64d4;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, .modal-closer:hover {
   box-shadow: 0 2px 5px #00000030;
 }
 
@@ -106,7 +106,7 @@ input[type="submit"]:hover {
   background: #e3e3e3;
 }
 
-input[type="submit"]:active {
+input[type="submit"]:active, .modal-closer:active {
   background-color: #3574d8;
   box-shadow: none;
 }
