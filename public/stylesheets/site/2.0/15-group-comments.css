@@ -31,7 +31,7 @@ div.comment, li.comment {
 
 .comment div.icon {
   float: left;
-  margin: -2.145em 0.5625em 0.5625em 0;
+  margin: -2.145em 0.5625em 0.25em 0;
   border-bottom: 5px solid #cfd3d9;
 }
 

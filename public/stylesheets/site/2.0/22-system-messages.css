@@ -134,7 +134,6 @@ Set by an admin, these banners appear on every page until the user dismisses the
 
 .announcement .userstuff {
   background: #d3e3fd;
-  border: 1px solid #c2d2df;
   color: #333;
   margin: 0 2em;
   padding: 0.375em 0.75em;
