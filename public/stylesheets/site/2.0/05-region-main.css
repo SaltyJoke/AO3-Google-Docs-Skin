@@ -14,6 +14,7 @@ https://otwcode.github.io/docs/patterns/regions.html#main-region
   padding: clamp(6vw, 1in, 10vw);
   position: relative;
   min-height: 450px;
+  top: 5em;
 }
 
 #main:after {
@@ -23,6 +24,10 @@ https://otwcode.github.io/docs/patterns/regions.html#main-region
   font-size: 0;
   clear: both;
   visibility: hidden;
+}
+
+#main:has(#workskin) {
+    top: 9.5em;
 }
 
 #main.dashboard {

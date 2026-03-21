@@ -336,6 +336,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   z-index: 51;
   position: fixed;
   top: 2.5em;
+  justify-content: start;
 }
 
 #header .primary > li:first-of-type {
@@ -387,6 +388,16 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 
 #header #search .button {
   margin: 0;
+  font-size: 0;
+  width: 2.5rem;
+  height: 1.5rem;
+  background-size: 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/action/search/materialicons/48dp/2x/baseline_search_black_48dp.png");
+  background-color: #f4a82f;
+  filter: invert(1);
 }
 
 /* CONTEXT: collections */

@@ -6,6 +6,7 @@ https://otwcode.github.io/docs/patterns/regions.html#dashboard-region
   width: 15.5em;
   float: left;
   padding: 0 1em;
+  margin-top: 4.5em;
 }
 
 #dashboard li {
@@ -39,9 +40,9 @@ https://otwcode.github.io/docs/patterns/regions.html#dashboard-region
 #dashboard ul {
   float: none;
   display: block;
-  padding: 1.286em 0;
+  padding: 0.75em 0;
   text-align: left;
-  border-top: 2px solid #ddd;
+  border-top: 1px solid #c7c7c7;
   position: relative;
 }
 
