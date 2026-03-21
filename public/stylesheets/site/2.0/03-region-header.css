@@ -67,8 +67,11 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 }
 
 #header .heading a span {
-  top: 0.2em;
-  position: relative;
+  top: 0.75em;
+  left: 60px;
+  position: fixed;
+  z-index: 51;
+  line-height: 1.2em;
   padding-inline: 6px;
 }
 
@@ -82,7 +85,15 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 #header .heading sup {
   font-size: 0.583em;
   font-style: italic;
-}
+  position: fixed;
+  top: -0.25em;
+  left: -0.25em;
+  z-index: 50;
+  width: 100%;
+  background: #f9fbfd;
+  border-bottom: 1px solid #c7c7c7;
+  padding: 2em 0 4.5em calc(60px + 10.75rem);
+} /* cheaty background and shape for header because of z-index fighting */
 
 #header .logo {
   float: left;
@@ -90,7 +101,8 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   height: 48px;
   margin: 4px;
   border-radius: 50%;
-  position: relative;
+  position: fixed;
+  z-index: 51;
 }
 
 #header .logo:hover, #header .logo:focus {
@@ -103,13 +115,14 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 
 /* DIFF: cannot use a replacement image in the skin version; make a rough non-circular approximation
 #header .logo {
-  float: left;
-  max-width: 1.8em;
-  height: auto;
-  margin: 0.2em;
-  position: relative;
-  left: 0.625em;
-  top: 0.625em;
+  width: 34.9px;
+  height: 24px;
+  position: fixed;
+  z-index: 51;
+  overflow: visible;
+  padding: 12px 6.5px;
+  margin: 4px;
+  border-radius: 48px;
 }
  */
 
@@ -161,6 +174,9 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   margin-right: 0.375em;
   margin-top: 0.65em;
   display: flex;
+  z-index: 51;
+  position: fixed;
+  right: 0;
 }
 
 #header .user {
@@ -317,8 +333,9 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 #header .primary {
   padding: 0;
   width: 100%;
-  justify-content: start;
-  margin-top: -1.5em;
+  z-index: 51;
+  position: fixed;
+  top: 2.5em;
 }
 
 #header .primary > li:first-of-type {
@@ -386,15 +403,8 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
     text-shadow: none;
 }
 
-/* CONTEXT: work */
-
-#outer.wrapper:has(#workskin) #header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: #f9fbfd;
-    border-bottom: 1px solid #c7c7c7;
-    padding-bottom: 5em;
+#outer:has(#workskin) #header .heading sup {
+  padding-bottom: 10em;
 }
 
 /* END == */
