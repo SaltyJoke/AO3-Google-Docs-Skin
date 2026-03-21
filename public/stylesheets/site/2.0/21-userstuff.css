@@ -176,6 +176,11 @@
   position: relative;
 }
 
+#workskin #chapters .userstuff {
+  font-family: Calibri, Arial, Tahoma, Verdana, Helvetica, sans-serif;
+  font-size: 1.2em;
+} /* change to taste; will be too big if Calibri doesn't load */
+
 #workskin .module {
   float: none;
 }

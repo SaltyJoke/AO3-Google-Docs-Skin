@@ -229,6 +229,88 @@ dl.index p.actions {
 
 /* context: work navigation actions with secondary navigation */
 
+.work.navigation {
+  position: fixed;
+  top: 5em;
+  left: 1em;
+  right: 1em;
+  float: left;
+  z-index: 50;
+  justify-content: start;
+  background: #f0f4f9;
+  border-radius: 2em;
+  padding-inline: 1em;
+}
+
+.work.navigation > li {
+  padding-left: 0.3em;
+}
+
+.work.navigation > li > *:hover, .work.navigation > li > form > button:hover {
+  background-color: #e2e7ea;
+}
+
+.work.navigation > li > *:active, .work.navigation > li > form > button:active {
+  background-color: #d8dfe4;
+}
+
+.work.navigation .bookmark:not(:first-child):before, .work.navigation .comments:not(:first-child):before {
+  content: ' ';
+  border-left: 1px solid #c7c7c7;
+  padding: 0.1em 0.15em;
+}
+
+.work.navigation .chapter > a, .work.navigation .chapter button, .work.navigation .bookmark a, .work.navigation .comments a, .work.navigation .share a, .work.navigation .download button {
+  font-size: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-size: 1.25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0.25rem;
+  border-radius: 0.2rem;
+}
+
+.work.navigation .chapter button, .work.navigation .download button {
+  width: 2.25rem;
+  background-position-x: 0.25rem;
+}
+
+.work.navigation .chapter button:after, .work.navigation .download button:after {
+  padding: 0 0 0 1rem;
+  font-size: 0.875rem;
+}
+
+.work.navigation .chapter.previous a {
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/navigation/chevron_left/materialiconsoutlined/48dp/2x/outline_chevron_left_black_48dp.png");
+}
+.work.navigation .chapter.next a {
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/navigation/chevron_right/materialiconsoutlined/48dp/2x/outline_chevron_right_black_48dp.png");
+}
+
+.work.navigation .chapter button {
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/editor/format_list_numbered/materialiconsoutlined/48dp/2x/outline_format_list_numbered_black_48dp.png");
+}
+
+.work.navigation .bookmark a.bookmark_form_placement_open { /* bookmark add / edit */
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/action/bookmark_add/materialiconsoutlined/48dp/2x/outline_bookmark_add_black_48dp.png");
+}
+.work.navigation .bookmark a.hidden {
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/action/bookmark_remove/materialiconsoutlined/48dp/2x/outline_bookmark_remove_black_48dp.png");
+}
+
+.work.navigation .comments a {
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/communication/comment/materialiconsoutlined/48dp/2x/outline_comment_black_48dp.png");
+}
+
+.work.navigation .share a {
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/social/share/materialiconsoutlined/48dp/2x/outline_share_black_48dp.png");
+}
+
+.work.navigation .download button {
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/file/file_download/materialiconsoutlined/48dp/2x/outline_file_download_black_48dp.png");
+}
+
 .work.navigation .download {
   display: block;
   margin-block-start: 0;
