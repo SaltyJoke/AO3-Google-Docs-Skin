@@ -259,7 +259,18 @@ dl.stats dd {
 }
 
 .statistics .index li {
- padding: 0.643em 0.375em;
+  padding: 0.643em 0.375em;
+  margin: 0;
+}
+
+.statistics .index li > dl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.statistics .index dd, .statistics .index .stats {
+  margin: 0;
 }
 
 .statistics .index li:nth-of-type(even) {

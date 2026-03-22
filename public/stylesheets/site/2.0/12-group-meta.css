@@ -121,10 +121,13 @@ dl.meta .wrapper dd, dl.meta .wrapper dd p:last-of-type {
 
 .post .meta dl {
   padding: 0;
+  display: grid;
+  grid-template-columns: max-content auto;
 }
 
 .post .meta dt, .post .meta dd {
   border: none;
+  margin: 0.25em 0;
 }
 
 .post .meta dd ul li {

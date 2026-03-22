@@ -25,13 +25,15 @@ https://otwcode.github.io/docs/patterns/regions.html#footer-region
   width: 100%;
   align-items: start;
 }
+/* DIFF: cannot have clamp in ao3 skin; replace with 1in */
 
-#outer.wrapper:has(#main.dashboard) #footer ul {
+#outer:has(#dashboard) #footer ul {
   margin-left: 17.5rem;
   margin-right: clamp(6vw, 1in, 10vw);
 }
+/* DIFF: cannot have clamp in ao3 skin; replace with 1in */
 
-#outer.wrapper:has(#main.dashboard) #footer .menu {
+#outer:has(#dashboard) #footer .menu {
   margin: 0;
 }
 

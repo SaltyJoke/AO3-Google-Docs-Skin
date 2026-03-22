@@ -16,6 +16,7 @@ https://otwcode.github.io/docs/patterns/regions.html#main-region
   min-height: 450px;
   top: 5em;
 }
+/* DIFF: cannot have clamp in ao3 skin; replace with 1in */
 
 #main:after {
   content: " ";
@@ -27,12 +28,14 @@ https://otwcode.github.io/docs/patterns/regions.html#main-region
 }
 
 #main:has(#workskin) {
-    top: 9.5em;
+  top: 9.5em;
+  margin-bottom: 5em;
 }
 
 #main.dashboard {
   margin: auto clamp(6vw, 1in, 10vw) auto 17.5rem;
 }
+/* DIFF: cannot have clamp in ao3 skin; replace with 1in */
 
 #main.home {
   padding: 2em 7.5em 3.5em;

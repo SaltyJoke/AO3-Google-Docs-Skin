@@ -474,6 +474,7 @@ a.modal.help {
   font-size: 0.875em;
   overflow: auto;
   padding: 1.5em;
+  max-height: 720px;
 }
 
 #modal.tall {

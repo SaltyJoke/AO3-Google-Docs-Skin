@@ -77,7 +77,6 @@ li.blurb:after, .blurb .blurb:after {
 }
 
 .blurb dl.stats {
-  float: right;
   line-height: 1.5;
 }
 
@@ -425,6 +424,8 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 .reading h4.viewed {
   padding: 0.25em;
   color: #0b57d0;
+  float: left;
+  margin: 0;
 }
 
 .reading .deleted h4.viewed {

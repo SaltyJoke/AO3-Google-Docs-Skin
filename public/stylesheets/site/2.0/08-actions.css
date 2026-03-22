@@ -53,7 +53,7 @@ label.action {
   padding: 0.15em 0.375em;
 }
 
-input[type="submit"], .modal-closer {
+input[type="submit"], .action.modal-closer {
   height: auto;
   white-space: normal;
   color: #fff;
@@ -93,11 +93,11 @@ ol.pagination, div.pagination, ol.year {
   background-color: #e8ebee;
 }
 
-input[type="submit"]:hover, input[type="submit"]:focus, .modal-closer:hover, .modal-closer:focus {
+input[type="submit"]:hover, input[type="submit"]:focus, .action.modal-closer:hover, .action.modal-closer:focus {
   background-color: #1e64d4;
 }
 
-input[type="submit"]:hover, .modal-closer:hover {
+input[type="submit"]:hover, .action.modal-closer:hover {
   box-shadow: 0 2px 5px #00000030;
 }
 
@@ -106,7 +106,7 @@ input[type="submit"]:hover, .modal-closer:hover {
   background: #e3e3e3;
 }
 
-input[type="submit"]:active, .modal-closer:active {
+input[type="submit"]:active, .action.modal-closer:active {
   background-color: #3574d8;
   box-shadow: none;
 }
@@ -246,21 +246,21 @@ dl.index p.actions {
   padding-left: 0.3em;
 }
 
-.work.navigation > li > *:hover, .work.navigation > li > form > button:hover {
+.work.navigation > li > a:hover, .work.navigation > li > button:hover, .work.navigation > li > form > button:hover {
   background-color: #e2e7ea;
 }
 
-.work.navigation > li > *:active, .work.navigation > li > form > button:active {
+.work.navigation > li > a:active, .work.navigation > li > button:active, .work.navigation > li > form > button:active {
   background-color: #d8dfe4;
 }
 
-.work.navigation .bookmark:not(:first-child):before, .work.navigation .comments:not(:first-child):before {
+.work.navigation .add:not(:first-child):before, .work.navigation .chapter.entire:not(:first-child):before, .chapter.bychapter:not(:first-child):before, .work.navigation .bookmark:not(:first-child):before, .work.navigation .comments:not(:first-child):before {
   content: ' ';
   border-left: 1px solid #c7c7c7;
   padding: 0.1em 0.15em;
 }
 
-.work.navigation .chapter > a, .work.navigation .chapter button, .work.navigation .bookmark a, .work.navigation .comments a, .work.navigation .share a, .work.navigation .download button {
+.work.navigation .add a, .work.navigation .edit:not(.tag) a, .work.navigation .chapter:not(.entire):not(.bychapter) > a, .work.navigation .chapter button, .work.navigation .bookmark a, .work.navigation .comments a, .work.navigation .share a, .work.navigation .download button {
   font-size: 0;
   width: 1.25rem;
   height: 1.25rem;
@@ -279,6 +279,14 @@ dl.index p.actions {
 .work.navigation .chapter button:after, .work.navigation .download button:after {
   padding: 0 0 0 1rem;
   font-size: 0.875rem;
+}
+
+.work.navigation .add a {
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/content/add/materialiconsoutlined/48dp/2x/outline_add_black_48dp.png");
+}
+
+.work.navigation .edit:not(.tag) a {
+  background-image: url("https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/png/image/edit/materialiconsoutlined/48dp/2x/outline_edit_black_48dp.png");
 }
 
 .work.navigation .chapter.previous a {
@@ -352,7 +360,7 @@ https://otwarchive.atlassian.net/browse/AO3-4629?focusedCommentId=372231
 + 0.25em to compensate for borders */
 .javascript .work.navigation .secondary {
   position: absolute;
-  right: 0;
+  right: auto;
   top: 2.411em;
     align-items: center;
     gap: 0 0.643em;

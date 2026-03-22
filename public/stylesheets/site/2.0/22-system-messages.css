@@ -289,12 +289,6 @@ dl#symbols-key dd {
   margin: -55px auto auto 100px;
 }
 
-#symbols-key dl {
-  border: 1px solid #ddd;
-  margin-bottom: 1.286em;
-  padding: 0.15em;
-}
-
 #symbols-key dl dt img, #bookmark-symbols-key dt img, #symbols-key dl dt, #bookmark-symbols-key dt {
   height: 25px;
   width: 25px;
