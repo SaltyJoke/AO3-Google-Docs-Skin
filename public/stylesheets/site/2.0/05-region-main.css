@@ -37,6 +37,10 @@ https://otwcode.github.io/docs/patterns/regions.html#main-region
 }
 /* DIFF: cannot have clamp in ao3 skin; replace with 1in */
 
+#outer:has(#header h2) #main {
+  top: 0;
+}
+
 #main.home {
   padding: 2em 7.5em 3.5em;
 }

@@ -1,27 +1,22 @@
 /* MEDIA: only screen and (max-width: 62em), handheld ENDMEDIA */
 
+#inner {
+  display: flex;
+}
+
 /* 04 region dashboard */
 
 #dashboard {
-  clear: both;
-  float: none;
-  margin: 1% 3.5%;
-  max-width: 100%;
-  padding: 0;
   width: auto;
 }
 
 #dashboard, #dashboard.own {
-  border-bottom: 10px solid #900;
-  border-top: 10px solid #900;
-  padding: 0.5em 0;
+  padding: 0 0.25em;
     border-radius: 0.25em;
 }
 
 #dashboard ul {
-  border: none;
-  display: inline;
-  padding: 0;
+  padding: 0.25em 0;
   text-align: left;
 }
 
@@ -30,18 +25,13 @@
 }
 
 #dashboard a, #dashboard span {
-  display: inline-block;
   margin: 0.25em 0;
+  padding: 0 0.5625em;
+  width: max-content;
 }
 
 #dashboard .secondary {
-  background: #eee;
-  padding: 0.375em 0 0.625em;
-    box-shadow: inset 2px 2px 5px #bbb;
-}
-
-#dashboard .secondary a {
-  margin: 0.125em 0;
+  position: absolute;
 }
 
 #dashboard .landmark {
@@ -53,10 +43,18 @@
 
 #main, #main.dashboard {
   float: none;
-  margin: auto;
-  padding-left: 3.5%;
-  padding-right: 3.5%;
+  margin: 0 0 5em 0;
+  padding: 2em;
   width: auto;
+}
+
+#main.dashboard {
+  margin-left: 12em;
+}
+
+/* 06 region footer */
+#footer ul {
+  margin: 0;
 }
 
 /* 07 interactions */
@@ -86,7 +84,6 @@ form.single .autocomplete li.input {
 /* 08 actions */
 
 .javascript .work.navigation .secondary {
-  width: 100%;
     box-sizing: border-box;
 }
 
@@ -133,16 +130,12 @@ display: none and secondary will always be open. */
 form.filters {
   width: auto;
   min-width: 23%;
-  max-width: 24%;
+  max-width: 28%;
+  margin-right: -2em;
 }
 
 .filters fieldset {
   margin-right: 0;
-}
-
-form.filters dl {
-  margin-left: 0.25em;
-  margin-right: 0.25em;
 }
 
 /* 21 userstuff */

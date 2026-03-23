@@ -35,7 +35,10 @@ body .narrow-shown {
 /* 03 region header */
 
 #header .logo {
-  height: 1.75em;
+  height: 2em;
+  width: 2em;
+  top: 0;
+  left: 0;
 }
 
 #header .dropdown a:focus {
@@ -44,27 +47,6 @@ body .narrow-shown {
 
 #header .primary > li:first-of-type {
   margin-left: 0;
-}
-
-#header .dropdown a:focus, #header .dropdown .menu a:focus {
-  background: transparent;
-  color: #111;
-}
-
-#header .open a:focus {
-  background: #ddd;
-}
-
-#header .primary .dropdown a:focus {
-  color: #fff;
-}
-
-#header .primary .open a:focus {
-  color: #111;
-}
-
-#header .user .open a:focus {
-  color: #900;
 }
 
 #header h2.collections {
@@ -88,16 +70,26 @@ body .narrow-shown {
 
 /* 04 region dashboard */
 
+#inner {
+  display: block;
+}
+
 #dashboard, #dashboard.own {
-  border-bottom-width: 7px;
-  border-top-width: 7px;
+  float: none;
+  margin: 4.75em 0 0.5em;
+  border-bottom: 1px solid #c7c7c7;
   padding: 0.25em 0;
+}
+
+#dashboard a, #dashboard span {
+  display: inline-block;
 }
 
 /* 05 region main */
 
 #main, #main.dashboard {
   position: static;
+  margin: 0;
 }
 
 #main.errors {

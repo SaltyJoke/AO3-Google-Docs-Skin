@@ -22,6 +22,7 @@ ul.actions, p.actions, li.actions, span.actions, fieldset.actions, dd.actions {
 ul.actions {
   padding-bottom: 0;
   padding-top: 0;
+  flex-wrap: wrap;
 }
 
 .actions a, .actions a:link, .action, .action:link, .actions button, .actions input, input[type="submit"], button, .current, .actions label {

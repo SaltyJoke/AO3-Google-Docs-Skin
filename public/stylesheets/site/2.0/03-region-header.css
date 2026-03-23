@@ -421,7 +421,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   font-size: 1.714em;
   line-height: 1.5;
   margin: 0;
-  padding: 0 0.375em;
+  padding: 2.8em 0.375em 0;
     text-shadow: none;
 }
 
