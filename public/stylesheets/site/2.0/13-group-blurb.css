@@ -77,7 +77,12 @@ li.blurb:after, .blurb .blurb:after {
 }
 
 .blurb dl.stats {
+  float: right;
   line-height: 1.5;
+}
+
+.blurb:has(.viewed.heading) dl.stats {
+  float: none;
 }
 
 .blurb h5 .landmark {

@@ -10,6 +10,7 @@ dl.meta {
   grid-template-columns: max-content auto;
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
+  margin-bottom: 0.5em;
 }
 
 .meta dt {

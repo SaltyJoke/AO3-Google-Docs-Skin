@@ -271,6 +271,10 @@ dl.index p.actions {
   border-radius: 0.2rem;
 }
 
+.work.navigation .bookmark .hidden {
+  border: 0.65rem solid transparent;
+}
+
 .work.navigation .chapter button, .work.navigation .download button {
   width: 2.25rem;
   background-position-x: 0.25rem;
@@ -387,6 +391,10 @@ display: none and secondary will always be open. */
 
 .javascript .work.navigation .secondary .actions {
   padding: 0;
+}
+
+.chapter.actions {
+  float: none;
 }
 
 /* END== */
