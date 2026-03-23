@@ -130,6 +130,15 @@ Set by an admin, these banners appear on every page until the user dismisses the
 .announcement {
   clear: both;
   position: relative;
+  margin: 4.5em 0 0.5em;
+}
+
+#outer:has(#workskin) .announcement {
+  margin-top: 9em;
+}
+
+#outer:has(#header h2) .announcement {
+  margin-top: 0.5em;
 }
 
 .announcement .userstuff {
@@ -156,7 +165,7 @@ Set by an admin, these banners appear on every page until the user dismisses the
 .announcement .action {
   background: #fff none;
   border: 1px solid #bbb;
-  padding: 0.25em 0.5em;
+  padding: 0.125em 0.5em;
     border-radius: 2em;
 }
 

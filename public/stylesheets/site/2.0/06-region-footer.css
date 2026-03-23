@@ -24,6 +24,7 @@ https://otwcode.github.io/docs/patterns/regions.html#footer-region
   text-align: left;
   width: 100%;
   align-items: start;
+  flex-wrap: nowrap;
 }
 /* DIFF: cannot have clamp in ao3 skin; replace with 1in */
 

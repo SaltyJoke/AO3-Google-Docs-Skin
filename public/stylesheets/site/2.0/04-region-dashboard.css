@@ -64,7 +64,7 @@ https://otwcode.github.io/docs/patterns/regions.html#dashboard-region
     border-radius: 0.25em;
 }
 
-#outer:has(#header h2) #dashboard {
+#outer:has(#header h2) #dashboard, #outer:has(.announcement) #dashboard {
   margin-top: 0;
 }
 

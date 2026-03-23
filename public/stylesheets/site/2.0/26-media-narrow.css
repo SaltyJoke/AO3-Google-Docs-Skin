@@ -89,6 +89,9 @@ body .narrow-shown {
 
 #main, #main.dashboard {
   position: static;
+}
+
+#main.dashboard {
   margin: 0;
 }
 

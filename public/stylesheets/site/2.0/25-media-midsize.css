@@ -43,13 +43,13 @@
 
 #main, #main.dashboard {
   float: none;
-  margin: 0 0 5em 0;
+  margin: 5em 0 0;
   padding: 2em;
   width: auto;
 }
 
 #main.dashboard {
-  margin-left: 12em;
+  margin-left: 0.25em;
 }
 
 /* 06 region footer */
