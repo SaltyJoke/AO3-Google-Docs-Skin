@@ -20,7 +20,7 @@ Perhaps we can make a wizard for this specific task.
 li.blurb, .blurb .blurb {
   display: block;
   position: relative;
-  clear: left;
+  clear: both;
   padding: 0.5em;
   overflow: visible;
   width: -webkit-fill-available;
