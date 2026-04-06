@@ -81,21 +81,6 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   cursor: text;
 } /* dumb edit box when you hover over the title */
 
-/* 0.583em x 24px = 14px */
-#header .heading sup {
-  font-size: 0.583em;
-  font-style: italic;
-  position: fixed;
-  top: -0.25em;
-  left: -0.25em;
-  z-index: 50;
-  width: 100%;
-  background: #f9fbfd;
-  border-bottom: 1px solid #c7c7c7;
-  padding: 2em 0 4.5em calc(60px + 10.75rem);
-} /* cheaty background and shape for header because of z-index fighting */
-/* DIFF: cannot use calc in ao3 skins; replace with 14.5rem */
-
 #header .logo {
   float: left;
   width: 48px;

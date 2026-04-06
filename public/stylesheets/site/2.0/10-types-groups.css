@@ -277,6 +277,10 @@ dl.stats dd {
   background: #e9eef6;
 }
 
+.statistics.chart svg > g:last-child {
+    pointer-events: none;
+}
+
 .concise li { 
   width: 45%; 
   float: left; 
